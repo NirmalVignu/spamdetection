@@ -5,6 +5,7 @@ import pandas as pd
 import nltk
 import re
 from nltk.corpus import stopwords
+nltk.download('stopwords')
 
 classify=joblib.load(open("spamdetection.pkl","rb"))
 STOPWORDS = set(stopwords.words('english'))
